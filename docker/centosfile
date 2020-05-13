@@ -1,0 +1,5 @@
+FROM centos
+MAINTAINER mallikarjuna
+CMD ["/etc/passwd"]
+ENTRYPOINT ["cat"]
+

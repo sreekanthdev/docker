@@ -1,0 +1,23 @@
+---
+version: '3'
+services:
+ mydb: 
+  image: mysql:5
+  environment: 
+   MYSQL_ROOT_PASSWORD: priya
+ mysite: 
+  image: wordpress
+  ports: 
+   - 5555:80
+  links: 
+   - mydb:mysql
+
+
+
+
+
+
+
+
+
+...
